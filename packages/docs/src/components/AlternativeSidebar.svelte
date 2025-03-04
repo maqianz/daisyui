@@ -15,10 +15,10 @@
       >
         <div class="text-xs text-base-content/30">Ads</div>
       </div>
-    {:else}
-      <div class="carbonads-responsive mx-auto flex min-h-[100px] items-center justify-center">
-        <Carbon />
-      </div>
+    <!-- {:else} -->
+      <!-- <div class="carbonads-responsive mx-auto flex min-h-[100px] items-center justify-center"> -->
+        <!-- <Carbon /> -->
+      <!-- </div> -->
     {/if}
   </div>
 </div>

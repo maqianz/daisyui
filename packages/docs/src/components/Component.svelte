@@ -3,6 +3,7 @@
   import { htmlToJsx, prefixClassNames } from "$lib/actions.svelte.js"
   import { t } from "$lib/i18n"
   import Clipboard from "$components/Clipboard.svelte"
+  import { generateUUID } from "$lib/util"
   let {
     title = undefined,
     desc = undefined,
@@ -12,7 +13,7 @@
     children,
     html,
     jsx,
-    uuid = crypto.randomUUID(),
+    uuid = generateUUID(),
   } = $props()
 
   let wrapper = $state()

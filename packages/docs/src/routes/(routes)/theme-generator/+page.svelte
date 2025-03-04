@@ -10,7 +10,7 @@
   import { randomizeThemeColors } from "$lib/themeGeneratorRandomizer"
   import { validateThemeName, validateThemeStructure } from "$lib/themeGeneratorValidation"
   import { browser } from "$app/environment"
-
+  import { generateUUID } from "$lib/util"
   // import { pushState } from '$app/navigation';
 
   // import pako from 'pako';
@@ -211,7 +211,7 @@
     holdTimeout = setTimeout(() => {
       new Audio("https://img.daisyui.com/fx/tap.mp3").play()
       createNewTheme(
-        crypto.randomUUID(),
+        generateUUID(),
         nameGenerator(),
         randomizeThemeColors(data.tailwindcolors, data.colorPairs),
       )

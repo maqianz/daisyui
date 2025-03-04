@@ -1,9 +1,10 @@
 import themes from "daisyui/theme/object"
 import themeOrder from "daisyui/functions/themeOrder"
+import { generateUUID } from "$lib/util"
 
 function builtinThemes() {
   return themeOrder.map((themeName, index) => ({
-    id: crypto.randomUUID(),
+    id: generateUUID(),
     type: "builtin",
     name: themeName,
     ...themes[themeName],
