@@ -59,9 +59,6 @@
         "vite": "6.0.11",
       },
     },
-    "packages/logs": {
-      "name": "daisyui-logs",
-    },
     "packages/playground": {
       "name": "daisyui-playground",
       "dependencies": {
@@ -656,8 +653,6 @@
     "daisyui": ["daisyui@workspace:packages/daisyui"],
 
     "daisyui-docs": ["daisyui-docs@workspace:packages/docs"],
-
-    "daisyui-logs": ["daisyui-logs@workspace:packages/logs"],
 
     "daisyui-playground": ["daisyui-playground@workspace:packages/playground"],
 
